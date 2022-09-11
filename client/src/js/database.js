@@ -26,13 +26,12 @@ export const putDb = async content => {
   const store = tx.objectStore('jate')
 
   // get all data in the database.
-  const request = store.put({jate: content });
+  const request = store.put({ jate: content })
 
   const result = await request
   // Get confirmation of the request.
   console.log('result.value', result)
   return result
-
 }
 
 // TODO: Add logic for a method that gets all the content from the database
@@ -57,4 +56,4 @@ export const getDb = async () => {
   return result
 }
 
-initdb();
+initdb()
