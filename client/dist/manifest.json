@@ -36,7 +36,7 @@
   "orientation": "portrait",
   "display": "standalone",
   "start_url": "./",
-  "description": "Type something",
+  "description": "Offline text editor for your projects",
   "background_color": "#225ca3",
   "theme_color": "#225ca3"
 }
