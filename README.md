@@ -20,7 +20,7 @@
 ## Usage-Info
   After installing dependencies and invoking the program with run start:dev you can install the application by clicking the install button. After the app has been installed you can then use the text editor in offline mode. <br><br>
 ## Deployed Link
-  Skip the installation and check out the live link to the deployed site: texty.herokuapp.com/ <br>
+  Skip the installation and check out the live link to the deployed site: https://texty.herokuapp.com/ <br>
 ## Demo
  ![text-editor-pic](https://github.com/itsmejustino/typeMe/blob/main/03-idb-storage.png?raw=true)
 ## Contribute
