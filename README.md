@@ -16,9 +16,11 @@
   After forking the repository follow these steps.<br>
  1. npm i for dependecies.<br>
  2. npm run start:dev to start the program<br>
+ 3. http://localhost:3000/ to test the program
 ## Usage-Info
   After installing dependencies and invoking the program with run start:dev you can install the application by clicking the install button. After the app has been installed you can then use the text editor in offline mode. <br><br>
-  Link to the deployed site: https://git.heroku.com/texty.git
+##Deployed Link
+  Skip the installation and check out the live link to the deployed site: https://git.heroku.com/texty.git
 ## Contribute
   If you would like to contribute please send a pull request.
 ##Technologies
