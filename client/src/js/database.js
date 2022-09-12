@@ -59,4 +59,4 @@ export const getDb = async () => {
 }
 
 //hoisted function that invokes the db connection 
-initdb();
+initdb()
