@@ -1,5 +1,5 @@
 import { openDB } from 'idb'
-
+//initialize connection to the db with idb.
 const initdb = async () =>
   openDB('jate', 1, {
     upgrade (db) {
@@ -12,29 +12,31 @@ const initdb = async () =>
     }
   })
 
-// TODO: Add logic to a method that accepts some content and adds it to the database
+//async function to add content to the database.
 export const putDb = async content => {
   console.log('GET from the database')
 
-  // connect db and versioon number
+  // connect db and version number
   const contentDb = await openDB('jate', 1)
 
   // Create a new transaction and specify the database. readonly or readandwrite
   const tx = contentDb.transaction('jate', 'readwrite')
 
-  // Open object store.
+  //variable golds stored transaction object. Opens object store.
   const store = tx.objectStore('jate')
 
-  // get all data in the database.
+  // requests to put stored content in jate db.
   const request = store.put({ jate: content })
 
+  //await the request and store to variable
   const result = await request
-  // Get confirmation of the request.
+  // confirms request
   console.log('result.value', result)
+  //return the result
   return result
 }
 
-// TODO: Add logic for a method that gets all the content from the database
+//gets content from the database.
 export const getDb = async () => {
   console.log('GET from the database')
 
@@ -47,7 +49,7 @@ export const getDb = async () => {
   // Open object store.
   const store = tx.objectStore('jate')
 
-  // get all data in the database.
+  // get all data in the jate database.
   const request = store.getAll()
 
   const result = await request
@@ -56,4 +58,5 @@ export const getDb = async () => {
   return result
 }
 
-initdb()
+//hoisted function that invokes the db connection 
+initdb();
