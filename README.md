@@ -19,9 +19,9 @@
  3. http://localhost:3000/ to test the program
 ## Usage-Info
   After installing dependencies and invoking the program with run start:dev you can install the application by clicking the install button. After the app has been installed you can then use the text editor in offline mode. <br><br>
-##Deployed Link
-  Skip the installation and check out the live link to the deployed site: https://git.heroku.com/texty.git
-##Demo
+## Deployed Link
+  Skip the installation and check out the live link to the deployed site: https://git.heroku.com/texty.git <br>
+## Demo
  ![text-editor-pic](https://github.com/itsmejustino/typeMe/blob/main/03-idb-storage.png?raw=true)
 ## Contribute
   If you would like to contribute please send a pull request.
