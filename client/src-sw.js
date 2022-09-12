@@ -26,11 +26,13 @@ warmStrategyCache({
 
 registerRoute(({ request }) => request.mode === "navigate", pageCache);
 
-//caches 
+//cache for image to load without network. cache first strategy. 
+const ImgCacheCallback = ({ request }) => request.destination === "image";
+
 registerRoute(
-  ({ request }) => request.destination === "image",
+  (ImgCacheCallback,
   new CacheFirst({
-    cacheName: "assets",
+    cacheName: "image-cache",
     plugins: [
       new CacheableResponsePlugin({
         statuses: [0, 200],
@@ -41,4 +43,4 @@ registerRoute(
       }),
     ],
   })
-);
+));
