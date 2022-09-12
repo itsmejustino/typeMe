@@ -19,8 +19,8 @@ export const putDb = async content => {
   // connect db and version number
   const contentDb = await openDB('jate', 1)
 
-  // Create a new transaction and specify the database. readonly or readandwrite
-  const tx = contentDb.transaction('jate', 'readwrite')
+  // Create a new transaction and specify the database. readonly or readwrite
+  const tx = contentDb.transaction('jate', 'readwrite');
 
   //variable golds stored transaction object. Opens object store.
   const store = tx.objectStore('jate')
@@ -44,7 +44,7 @@ export const getDb = async () => {
   const contentDb = await openDB('jate', 1)
 
   // Create a new transaction and specify the database. readonly or readandwrite
-  const tx = contentDb.transaction('jate', 'readonly')
+  const tx = contentDb.transaction('jate', 'readonly');
 
   // Open object store.
   const store = tx.objectStore('jate')
@@ -55,7 +55,7 @@ export const getDb = async () => {
   const result = await request
   // Get confirmation of the request.
   console.log('result.value', result)
-  return result
+  return result.value
 }
 
 //hoisted function that invokes the db connection 

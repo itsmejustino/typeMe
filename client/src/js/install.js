@@ -2,7 +2,7 @@ const butInstall = document.getElementById("buttonInstall");
 
 // Logic for installing the PWA
 //shows hidden install prompt using window
-window.addEventListener("beforeinstallprompt", (event) => {
+window.addEventListener("beforeinstallprompt", event => {
   // Store the triggered events
   window.deferredPrompt = event
 
@@ -23,7 +23,7 @@ butInstall.addEventListener("click", async () => {
 })
 
 // on successful install console log message after appinstalled event is triggered
-window.addEventListener("appinstalled", (event) => {
+window.addEventListener("appinstalled", event => {
   textHeader.textContent = 'Successfully installed!'
   console.log("Installed successfully!!", "appinstalled", event)
 })
