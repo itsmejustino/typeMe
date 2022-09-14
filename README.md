@@ -4,7 +4,9 @@
 [License](#license)<br>
 [Install-Instructions](#install-Instructions)<br>
 [Usage-Info](#usage-Info)<br>
+[Demo](#demo)<br>
 [Contribute](#contribute)<br>
+[Technologies](#techonologies)<br>
 [Questions](#questions)<br>
 [Tests](#tests)<br>
 
