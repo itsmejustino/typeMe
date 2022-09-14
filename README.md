@@ -6,7 +6,7 @@
 [Usage-Info](#usage-Info)<br>
 [Demo](#demo)<br>
 [Contribute](#contribute)<br>
-[Technologies](#techonologies)<br>
+[Technologies](#technologies)<br>
 [Questions](#questions)<br>
 [Tests](#tests)<br>
 
