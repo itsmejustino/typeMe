@@ -25,7 +25,7 @@
  ![text-editor-pic](https://github.com/itsmejustino/typeMe/blob/main/03-idb-storage.png?raw=true)
 ## Contribute
   If you would like to contribute please send a pull request.
-##Technologies
+## Technologies
 This app was made by utilizing Javascript ES6, Node.js, and Webpack v5.51<br>
 ## Questions 
 If you are interested in contacting me or contributing to this project, please contact me via email and create a pull request to this repo.
